@@ -1,0 +1,56 @@
+Upgrade Windows edition using DISM
+
+Step 1 — Open CMD as Administrator
+
+Step 2 — Check current edition
+dism /online /Get-CurrentEdition
+
+Step 3 — Check editions you can upgrade to
+dism /online /Get-TargetEditions
+
+If you have any other Editions.
+This may show something like: 
+
+Target Edition : Professional
+
+If you already have "Professional Edition" it may show these options..
+
+Target Edition : ProfessionalEducation
+Target Edition : ProfessionalWorkstation
+Target Edition : Education
+Target Edition : ProfessionalCountrySpecific
+Target Edition : ProfessionalSingleLanguage
+Target Edition : ServerRdsh
+Target Edition : IoTEnterprise
+Target Edition : Enterprise
+
+Step 4 — Apply the new product key
+
+Replace the example key with yours:
+
+dism /online /Set-Edition:Professional /ProductKey:XXXXX-XXXXX-XXXXX-XXXXX-XXXXX /AcceptEula
+
+
+Example (Windows 10/11 Pro):
+
+dism /online /Set-Edition:Professional /ProductKey:VK7JG-NPHTM-C97JM-9MPGT-3V66T /AcceptEula
+
+
+.....Your system will upgrade and reboot automatically.....
+
+Generic Product Keys (GPK) (for upgrading only, not activation)
+Edition	Generic Key:
+
+Windows 10/11 Pro        --    VK7JG-NPHTM-C97JM-9MPGT-3V66T
+Windows 10/11 Pro N      --    2B87N-8KFHP-DKV6R-Y2C8J-PKCKT
+Windows 10/11 Education  --    YNMGQ-8RYV3-4PGQ3-C8XTP-7CFBY
+Windows 10/11 Enterprise --    NPPR9-FWDCX-D2C8J-H872K-2YT43
+
+(Use your real key for activation later.)
+
+❗ If DISM gives error 50 or 87
+
+Run:
+
+slmgr.vbs /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+slmgr.vbs /ato
