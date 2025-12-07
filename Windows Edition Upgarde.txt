@@ -48,9 +48,10 @@ Windows 10/11 Enterprise --    NPPR9-FWDCX-D2C8J-H872K-2YT43
 
 (Use your real key for activation later.)
 
-❗ If DISM gives error 50 or 87
+❗ If DISM gives error 50 or 87 ❗
 
 Run:
 
 slmgr.vbs /ipk XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
+
 slmgr.vbs /ato
