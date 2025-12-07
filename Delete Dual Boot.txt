@@ -1,0 +1,8 @@
+Process Of deleting Dual Boot:-
+1. Press: WIN+R
+2. Type : msconfig
+3. Click on "Boot" Tab
+4. Select the OS.
+5. Click on "Delete" and Confirm.
+
+----- You've successfully deleted the OS you want ----- 
