@@ -1,0 +1,20 @@
+Install yt-dlp on Windows :- Run PowerShell as Admin > type: winget install yt-dlp & hit Enter > Follow up the process.  
+
+Video Download Process :- Run Windows PowerShell as Admin or User.
+
+Copy the youtube video link you want to download and Paste the link inside of "  " .
+ 
+Video Only : Download a YouTube Video - yt-dlp "Paste Youtube Link Here"
+
+Full Playlist : Download an Entire YouTube Playlist - yt-dlp "Paste Youtube Link Here"
+
+Audio Only : Download Audio-Only MP3 Files - yt-dlp -f "bestaudio" --extract-audio --audio-format mp3 "Paste Youtube Link Here"
+
+Advanced Features: Download Videos in 4K Quality - yt-dlp -f "bestvideo[height=1080]+bestaudio" "Paste Youtube Link Here"
+
+Download Videos with Subtitles :- yt-dlp --write-subs --sub-lang en "Paste Youtube Link Here" 
+
+BY Default Download Location :-
+ 
+For Running Powershell as "User": C:\Users\what ever your User name is
+For Running Powershell as "Admin": C:\Windows\System32
