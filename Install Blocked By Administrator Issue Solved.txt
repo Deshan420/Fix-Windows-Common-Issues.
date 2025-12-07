@@ -1,0 +1,8 @@
+1. Search "Registry Editor" and run as Administrator.
+2. HKEY_LOCAL_MACHINE> SOFTWER> MICROSOFT> WINDOWS> CurrentVersion> Policies> System
+3. Select "EnableLUA" & double click on it.
+4. Replace Value "1" with "0" & Click "OK".
+5. Close the Window & Restart your PC.
+
+Note:	After Installing the Software. Repeat the entire process.
+	But this time [Replace Value "0" with "1"].
